@@ -18,13 +18,19 @@
     "autoload": {
         "psr-4": {
             "Gsferro\\DatabaseSchemaEasy\\": "src/"
-        }
+        },
+        "files": [
+            "src\\Helpers\\functions.php"
+        ]
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Gsferro\\DatabaseSchemaEasy\\Providers\\DatabaseSchemaEasyServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "DatabaseSchemaEasy": "Gsferro\\DatabaseSchemaEasy\\Facades\\DatabaseSchemaEasy"
+            }
         }
     }
 }

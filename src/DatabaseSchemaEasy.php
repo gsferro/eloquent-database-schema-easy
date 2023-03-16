@@ -176,7 +176,7 @@ class DatabaseSchemaEasy
         foreach ($models as $model) {
             $instance = "App\Models\\$model";
             $getTable    = (new $instance)->getTable();
-            if ($getTable == $table ?? $this->table) {
+            if ($getTable == ($table ?? $this->table)) {
                 return $instance;
             }
         }

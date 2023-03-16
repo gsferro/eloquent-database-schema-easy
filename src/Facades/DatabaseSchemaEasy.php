@@ -13,6 +13,6 @@ class DatabaseSchemaEasy extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'databaseSchema';
+        return 'dbschemaeasy';
     }
 }

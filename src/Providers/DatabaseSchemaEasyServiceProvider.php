@@ -9,8 +9,11 @@ class DatabaseSchemaEasyServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        app()->bind('databaseSchema', function (string $table, ?string $connection = null) {
-            return new DatabaseSchemaEasy($table, $connection);
+        $this->app->bind('dbschemaeasy', function ($app, array $params) {
+            return new DatabaseSchemaEasy(
+                $params["table"], 
+                $params["connection"] ?? null
+            );
         });
     }
 }
