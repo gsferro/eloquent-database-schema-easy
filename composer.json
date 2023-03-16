@@ -1,0 +1,30 @@
+{
+    "name": "gsferro/database-schema-easy",
+    "type": "library",
+    "license": "MIT",
+    "keywords" : ["laravel", "schema", "eloquent", "doctrine", "database", "Easy", "builder"],
+    "description": "Simple and efficient way to manipulate your database connection scheme, whatever it may be.",
+    "authors": [
+        {
+            "name": "Guilherme Ferro",
+            "email": "gsferroti@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8",
+        "doctrine/orm": "^2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gsferro\\DatabaseSchemaEasy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gsferro\\DatabaseSchemaEasy\\Providers\\DatabaseSchemaEasyServiceProvider"
+            ]
+        }
+    }
+}
