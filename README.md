@@ -32,7 +32,7 @@ Doctrine/orm | ^2.14
 
 - `hasTable(): bool`: Verifica se a table exists
   ```php
-  $schema->hasColumn('id');
+  $schema->hasTable();
   # true
   ```
 
